@@ -9,6 +9,12 @@ export default function App() {
         width={300}
         resize="scale"
       />
+      <CloudinaryImage
+        publicId="claybell-net/keyboards/stainless1.jpg"
+        width={300}
+        height={200}
+        resize="fill"
+      />
     </CloudinaryProvider>
   );
 }

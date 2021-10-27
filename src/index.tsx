@@ -1,6 +1,4 @@
-import * as React from 'react';
-
-// Delete me
-export const Thing = () => {
-  return <div>the snozzberries taste like snozzberries</div>;
-};
+import { CloudinaryProvider } from './CloudinaryProvider';
+import { CloudinaryImage } from './CloudinaryImage';
+export { CloudinaryProvider };
+export { CloudinaryImage };

@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.0.3](https://github.com/claytonfbell/react-easy-cloudinary/compare/v1.0.2...v1.0.3) (2021-10-27)
+
+
+### Bug Fixes
+
+* Added PropTypes ([718add6](https://github.com/claytonfbell/react-easy-cloudinary/commit/718add666604fe21d29f43ee9e7d42d634afe655))
+
 ### [1.0.2](https://github.com/claytonfbell/react-easy-cloudinary/compare/v1.0.1...v1.0.2) (2021-10-27)
 
 ### [1.0.1](https://github.com/claytonfbell/react-easy-cloudinary/compare/v1.0.0...v1.0.1) (2021-10-27)

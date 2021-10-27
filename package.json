@@ -1,6 +1,10 @@
 {
   "version": "1.0.1",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/claytonfbell/react-easy-cloudinary.git"
+  },
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
   "files": [
@@ -27,12 +31,6 @@
     "hooks": {
       "pre-commit": "tsdx lint"
     }
-  },
-  "prettier": {
-    "printWidth": 80,
-    "semi": true,
-    "singleQuote": true,
-    "trailingComma": "es5"
   },
   "name": "react-easy-cloudinary",
   "author": "Clay Bell",

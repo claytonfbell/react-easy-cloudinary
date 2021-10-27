@@ -1,20 +1,20 @@
 // @ts-ignore
-import { Image, Transformation } from 'cloudinary-react';
-import React from 'react';
+import { Image, Transformation } from "cloudinary-react"
+import React from "react"
 
 interface Props {
-  publicId: string;
-  width?: number;
-  height?: number;
-  resize?: 'scale' | 'fill';
-  fullWidth?: boolean;
+  publicId: string
+  width?: number
+  height?: number
+  resize?: "scale" | "fill"
+  fullWidth?: boolean
 }
 
 export function CloudinaryImage(props: Props) {
   return (
     <Image
       publicId={props.publicId}
-      width={props.fullWidth ? '100%' : undefined}
+      width={props.fullWidth ? "100%" : undefined}
     >
       {props.resize !== undefined ? (
         <Transformation
@@ -24,5 +24,5 @@ export function CloudinaryImage(props: Props) {
         />
       ) : null}
     </Image>
-  );
+  )
 }

@@ -1,5 +1,5 @@
-import React from 'react';
-import { CloudinaryImage, CloudinaryProvider } from 'react-easy-cloudinary';
+import React from "react"
+import { CloudinaryImage, CloudinaryProvider } from "react-easy-cloudinary"
 
 export default function App() {
   return (
@@ -23,5 +23,5 @@ export default function App() {
         fullWidth
       />
     </CloudinaryProvider>
-  );
+  )
 }

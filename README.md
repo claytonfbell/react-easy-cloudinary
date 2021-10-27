@@ -21,8 +21,8 @@ yarn add react-easy-cloudinary
 ## usage
 
 ```tsx
-import React from 'react';
-import { CloudinaryImage, CloudinaryProvider } from 'react-easy-cloudinary';
+import React from "react"
+import { CloudinaryImage, CloudinaryProvider } from "react-easy-cloudinary"
 
 export default function App() {
   return (
@@ -46,6 +46,25 @@ export default function App() {
         fullWidth
       />
     </CloudinaryProvider>
-  );
+  )
+}
+```
+
+### Props
+
+These are the component props
+
+```tsx
+interface CloudinaryImageProps {
+  /** Your publicId for your image */
+  publicId: string
+  /** Used when resize property is set */
+  width?: number
+  /** Used when resize property is set */
+  height?: number
+  /** Scale to resize, fill to resize and crop */
+  resize?: "scale" | "fill"
+  /** For responsive design to stretch image 100% width space available to it */
+  fullWidth?: boolean
 }
 ```

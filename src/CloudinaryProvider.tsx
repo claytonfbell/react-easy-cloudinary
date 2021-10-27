@@ -1,6 +1,7 @@
 // @ts-ignore
 import { CloudinaryContext } from "cloudinary-react"
 import React from "react"
+import PropTypes from "prop-types"
 
 type ContextType = {
   cloudinaryId: string
@@ -15,12 +16,7 @@ export function useCloudinary() {
   return context
 }
 
-type Props = {
-  children: React.ReactNode
-  cloudinaryId: string
-}
-
-export function CloudinaryProvider(props: Props) {
+function CloudinaryProvider(props: CloudinaryProviderProps) {
   const { cloudinaryId } = props
 
   const value = React.useMemo(
@@ -37,3 +33,17 @@ export function CloudinaryProvider(props: Props) {
     </Context.Provider>
   )
 }
+
+export interface CloudinaryProviderProps {
+  children: React.ReactNode
+  /** Your cloundinary account's unique ID  */
+  cloudinaryId: string
+}
+
+CloudinaryProvider.propTypes = {
+  children: PropTypes.node.isRequired,
+  /** Your cloundinary account's unique ID  */
+  cloudinaryId: PropTypes.string.isRequired,
+}
+
+export default CloudinaryProvider

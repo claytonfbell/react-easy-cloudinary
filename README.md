@@ -34,9 +34,16 @@ export default function App() {
       />
       <CloudinaryImage
         publicId="claybell-net/keyboards/stainless1.jpg"
-        width={300}
-        height={200}
+        width={100}
+        height={60}
         resize="fill"
+      />
+      <CloudinaryImage
+        publicId="claybell-net/keyboards/stainless1.jpg"
+        width={300}
+        height={50}
+        resize="fill"
+        fullWidth
       />
     </CloudinaryProvider>
   );
